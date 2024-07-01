@@ -1,6 +1,6 @@
 # Coliseum Console Game
 
-This is a console game that we made for our **"Programming Languaje"** college project.
+This is a console game that we made for our **"Programming Languajes"** college project.
 
 ## Summary
 
