@@ -48,7 +48,7 @@ class ColiseumService {
         val utils = ColiseumUtils()
         val random: Int = Random.nextInt(20)
         val fightersToAdd: MutableList<FighterEntity> = mutableListOf()
-        for (i in 1..random) {
+        for (i in 1 .. random) {
             fightersToAdd.add(utils.getRandomFighter())
         }
         addFighters(fightersToAdd)
@@ -56,9 +56,7 @@ class ColiseumService {
 
     fun getFigtherCount(): Int = fighters.size
 
-    fun getAnEnemy(): FighterEntity {
-        return fighters.random()
-    }
+    fun getAnEnemy(): FighterEntity = if (fighters.size > 1) fighters.subList(1, fighters.size).random() else fighters.random()
 
 }
 
