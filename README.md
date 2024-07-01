@@ -15,6 +15,13 @@ There are three types of fighters:
 
 To win the game, you’ll need to defeat the Final Boss, that will appear in the game.
 
+## Fatures
+
+We use Kotlin to make this game, so you can see the code in the **`src/main/kotlin/**`** folders.
+
+In the `src/main/kotlin/services/ColiseumService.kt` file, in the `desapearDeadFighters()` function, we used lambda expressions to remove the dead 
+fighters from the list. In this way, we're using functional programming for improvement readability.
+
 ## Developers
 
 **Victor Palmero Valdes**
