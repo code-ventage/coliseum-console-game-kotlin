@@ -33,11 +33,11 @@ class ColiseumService {
                         name = "Final Boss",
                         health = Random.nextInt(100, 200),
                         alive = true,
-                        magic = Random.nextInt(1, 10),
-                        intelligence = Random.nextInt(1, 6),
-                        strength = Random.nextInt(1, 2),
-                        steal = Random.nextInt(1, 8),
-                        agility = Random.nextInt(1, 7),
+                        magic = Random.nextInt(1, Random.nextInt(2, 5)),
+                        intelligence = Random.nextInt(1, Random.nextInt(2, 5)),
+                        strength = Random.nextInt(1, Random.nextInt(2, 5)),
+                        steal = Random.nextInt(1, Random.nextInt(2, 5)),
+                        agility = Random.nextInt(1, Random.nextInt(2, 5)),
                 )
         )
     }
