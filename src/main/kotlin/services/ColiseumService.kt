@@ -46,7 +46,7 @@ class ColiseumService {
         fighters.clear()
         addFinalBoss()
         val utils = ColiseumUtils()
-        val random: Int = Random.nextInt(10)
+        val random: Int = Random.nextInt(20)
         val fightersToAdd: MutableList<FighterEntity> = mutableListOf()
         for (i in 1..random) {
             fightersToAdd.add(utils.getRandomFighter())
