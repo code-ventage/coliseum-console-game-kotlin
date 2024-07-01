@@ -51,3 +51,20 @@ open class ThiefEntity(
         alive = health > 0
     }
 }
+
+open class FinalBossEntity(
+        name: String,
+        private val strength: Int,
+        private val intelligence: Int,
+        private val agility: Int,
+        private val magic: Int,
+        private val steal: Int,
+        health: Int,
+        alive: Boolean = true,
+) : FighterEntity(name, health, alive) {
+    override fun getDamage(): Int = strength * intelligence * agility * magic * steal
+    override fun receiveAttack(damage: Int) {
+        health = if (health - damage < 0) 0 else health - damage
+        alive = health > 0
+    }
+}
