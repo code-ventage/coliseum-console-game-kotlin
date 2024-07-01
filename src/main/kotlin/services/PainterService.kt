@@ -1,30 +1,33 @@
 package com.palmerodev.services
 
 import com.palmerodev.model.FighterEntity
-import com.palmerodev.model.WarriorEntity
 
 open class PainterService {
 
-    fun displayFighters(enemy: FighterEntity, attacker: FighterEntity) {
+    fun displayFighters(enemy: FighterEntity? = null, player: FighterEntity) {
 
-        println("${getPadding() + attacker.name} \n ${getPadding() +getHealthBar(attacker.health)}")
-        drawCharacter('E', "Enemigo")
+        if (enemy != null) {
+            println("${getPadding() +  "Name: " +  enemy.name} \n ${getPadding() + getHealthBar(enemy.health)}")
+            drawCharacter('E', enemy.getDamage())
+        }
 
-        println("${  enemy.name} \n ${getHealthBar(enemy.health)}")
-        drawCharacter('A', "Atacante")
+        println("\nName: ${player.name} \n${getHealthBar(player.health)}")
+        drawCharacter('A', player.getDamage())
+
     }
 
     private fun getHealthBar(health: Int): String {
         val healthBar = StringBuilder()
-        for (i in 1 .. health / 100 ) {
+        for (i in 1 .. health / 10 ) {
             healthBar.append("█")
         }
-        return healthBar.toString()
+        return "HP: $healthBar"
     }
 
-    private fun drawCharacter(character: Char, label: String) {
+    private fun drawCharacter(character: Char, damage: Int) {
         val padding = getPadding()
         if (character == 'E') {
+            println("$padding DMG: $damage")
             println("$padding  _____")
             println("$padding ( ~ ~ )")
             println("$padding // || \\\\ ")
@@ -32,6 +35,7 @@ open class PainterService {
             println("$padding   _||_  ")
             println("$padding  ||  || ")
         } else {
+            println("DMG: $damage")
             println(" ^^^^^")
             println("( - - )")
             println(" / | \\")
@@ -50,11 +54,4 @@ open class PainterService {
     }
 
 
-}
-
-fun main() {
-    val painterService = PainterService()
-    val you = WarriorEntity("Enemy", 100, attack = 12, alive = true, health = 2000)
-    val enemy = WarriorEntity("You", 100, attack = 12, alive = true, health = 2000)
-    painterService.displayFighters(enemy, you)
 }

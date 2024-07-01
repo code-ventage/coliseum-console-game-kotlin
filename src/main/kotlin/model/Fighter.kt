@@ -1,7 +1,7 @@
 package com.palmerodev.model
 
 abstract class FighterEntity(
-        val name: String,
+        var name: String,
         var health: Int,
         var alive: Boolean,
 ) {
