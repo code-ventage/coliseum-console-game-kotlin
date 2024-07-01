@@ -15,7 +15,7 @@ Hay tres tipos de luchadores:
 
 Para ganar el juego, deberás derrotar al Jefe Final, que aparecerá en el juego.
 
-## futuros
+## Funcionalidades
 
 Usamos Kotlin para crear este juego, por lo que puedes ver el código en las carpetas **`src/main/kotlin/**`**.
 

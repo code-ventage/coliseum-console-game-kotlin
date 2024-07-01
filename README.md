@@ -15,7 +15,7 @@ There are three types of fighters:
 
 To win the game, you’ll need to defeat the Final Boss, that will appear in the game.
 
-## Fatures
+## Features
 
 We use Kotlin to make this game, so you can see the code in the **`src/main/kotlin/**`** folders.
 
