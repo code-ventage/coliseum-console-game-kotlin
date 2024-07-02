@@ -21,7 +21,7 @@ open class PainterService {
         for (i in 1 .. health / 10 ) {
             healthBar.append("█")
         }
-        return "HP: $healthBar"
+        return "HP: $healthBar :: $health"
     }
 
     private fun drawCharacter(character: Char, damage: Int) {
