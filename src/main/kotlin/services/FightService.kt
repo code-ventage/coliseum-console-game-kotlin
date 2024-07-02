@@ -13,7 +13,7 @@ class FightService {
         while (coliseum.getFigtherCount() > 0) {
             val enemy = coliseum.getAnEnemy()
             sleep(1000)
-            while (enemy.isAlive() && player!!.isAlive()){
+            while (enemy.isAlive() && player !!.isAlive()) {
 
                 painter.displayFighters(enemy = enemy, player = player !!)
                 println("Now it's your turn.")
@@ -48,9 +48,8 @@ class FightService {
                 println("The ${enemy.name} has defeated you!")
                 return true
             }
-        } else {
-            println("The ${enemy.name} failed to attack you.")
-        }
+        } else println("The ${enemy.name} failed to attack you.")
+
         return false
     }
 
@@ -70,12 +69,11 @@ class FightService {
         println("2. The Mage")
         println("3. The Thief")
         var fighterNumber = readANumber()
-        while (true){
+        while (true) {
             if (fighterNumber <= 0 || fighterNumber > 3) {
                 println("Please enter a number between 1 and 3.")
                 fighterNumber = readANumber()
-            }
-            else break
+            } else break
         }
         val utils = ColiseumUtils()
         when (fighterNumber) {
@@ -91,17 +89,17 @@ class FightService {
 
         coliseum.initialize()
         val result = fight()
-        if (!result) {
+        if (! result) {
             println("You have failed to defeat the final boss.")
         }
     }
 
-    private fun readANumber():Int {
+    private fun readANumber(): Int {
         val number = readln()
-        if (number.isEmpty() || number.toIntOrNull() == null) {
-            println("Please enter a number.")
-            return readANumber()
-        }
-        return number.toInt()
+        if (number.isEmpty() || number.toIntOrNull() != null) return number.toInt()
+
+        println("Please enter a number.")
+        return readANumber()
+
     }
 }

@@ -18,36 +18,38 @@ open class PainterService {
 
     private fun getHealthBar(health: Int): String {
         val healthBar = StringBuilder()
-        for (i in 1 .. health / 10 ) {
-            healthBar.append("█")
-        }
+        for (i in 1 .. health / 10 ) healthBar.append("█")
+
         return "HP: $healthBar :: $health"
     }
 
     private fun drawCharacter(character: Char, damage: Int) {
         val padding = getPadding()
         if (character == 'E') {
-            println("$padding DMG: $damage")
-            println("$padding  _____")
-            println("$padding ( ~ ~ )")
-            println("$padding // || \\\\ ")
-            println("$padding || ||  ||")
-            println("$padding   _||_  ")
-            println("$padding  ||  || ")
+            println("""
+                $padding DMG: $damage
+                $padding  _____
+                $padding ( ~ ~ )
+                $padding // || \\
+                $padding || ||  ||
+                $padding   _||_  
+                $padding  ||  || """)
+
         } else {
-            println("DMG: $damage")
-            println(" ^^^^^")
-            println("( - - )")
-            println(" / | \\")
-            println(" | |  |")
-            println("  _|_  ")
-            println(" |   | ")
+            println("""
+                DMG: $damage
+                 ^^^^^
+                ( - - )
+                / | \\
+                | |  |
+                 _|_  
+                |   | """.trimIndent() + "\n")
         }
     }
 
     private fun getPadding(): String {
         var padding = ""
-        for (i in 1 .. 12) {
+        for (i in 1 .. 8) {
             padding += "\t"
         }
         return padding
