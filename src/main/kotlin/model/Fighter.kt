@@ -1,4 +1,4 @@
-package com.palmerodev.model
+package model
 
 abstract class FighterEntity(
         var name: String,

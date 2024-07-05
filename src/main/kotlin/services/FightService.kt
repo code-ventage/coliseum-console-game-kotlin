@@ -1,6 +1,6 @@
-package com.palmerodev.services
+package services
 
-import com.palmerodev.model.FighterEntity
+import model.FighterEntity
 import java.lang.Thread.sleep
 
 class FightService {

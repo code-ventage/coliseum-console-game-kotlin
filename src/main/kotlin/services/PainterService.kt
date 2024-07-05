@@ -1,6 +1,6 @@
-package com.palmerodev.services
+package services
 
-import com.palmerodev.model.FighterEntity
+import model.FighterEntity
 
 open class PainterService {
 

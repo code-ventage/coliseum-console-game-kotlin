@@ -1,6 +1,6 @@
-package com.palmerodev.services
+package services
 
-import com.palmerodev.model.*
+import model.*
 import kotlin.random.Random
 
 class ColiseumService {

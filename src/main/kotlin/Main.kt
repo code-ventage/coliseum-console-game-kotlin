@@ -1,6 +1,4 @@
-package com.palmerodev
-
-import com.palmerodev.services.FightService
+import services.FightService
 
 fun main() {
     FightService().initialize()

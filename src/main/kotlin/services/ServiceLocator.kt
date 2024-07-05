@@ -1,4 +1,4 @@
-package com.palmerodev.services
+package services
 
 open class ServiceLocator {
     private val painterService: PainterService = PainterService()

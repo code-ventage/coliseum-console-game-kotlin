@@ -17,6 +17,12 @@ Para ganar el juego, deberás derrotar al Jefe Final.
 
 ## Como jugar
 
+Para jugar debe ejecutar en consola el siguiente comando:
+
+```shell
+java jar "\direccion al jar\coliseum.jar"
+```
+
 ### 1- Crear un luchador
 
 Se le pedira que proporcione un nombre para su luchador:

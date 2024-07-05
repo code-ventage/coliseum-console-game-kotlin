@@ -3,10 +3,10 @@
     <output-path>$PROJECT_DIR$/out/artifacts/coliseum_jar</output-path>
     <root id="archive" name="coliseum.jar">
       <element id="module-output" name="coliseum" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../.cache/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../../.cache/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/2.0.0/kotlin-stdlib-jdk8-2.0.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../../.cache/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../../../.cache/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/2.0.0/kotlin-stdlib-jdk7-2.0.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../../.cache/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar" path-in-jar="/" />
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
       </element>
