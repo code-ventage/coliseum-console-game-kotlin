@@ -123,8 +123,8 @@ luchadores muertos de la lista. De esta manera, utilizamos programación funcion
 
 ## Desarrolladores
 
-**Víctor Palmero Valdés**
+- **Víctor Palmero Valdés**
 
-**Marcos Portales Ramos**
+- **Marcos Portales Ramos**
 
-**José Lázaro Díaz Estive**
+- **José Lázaro Díaz Estive**
