@@ -1,31 +1,130 @@
-# Coliseum Console Game
+# Juego de consola Coliseo
 
-This is a console game that we made for our **"Programming Languajes"** college project.
+Este es un juego de consola que hicimos para nuestro proyecto universitario de **"Lenguajes de programación"**.
 
-## Summary
+## Resumen
 
-This game is a simple console game that you can play alone.
+Este juego es un juego de consola sencillo que puedes jugar solo.
 
-You’ll first need to create your own fighter, then you’ll be able to fight against other random generated fighters.
+Primero necesitarás crear tu propio luchador y luego podrás luchar contra otros guerreros generados aleatoriamente.
 
-There are three types of fighters:
-1. Warrior
-2. Magician
-3. Thief
+Hay tres tipos de luchadores:
+1. **guerrero**
+2. **mago**
+3. **ladrón**
 
-To win the game, you’ll need to defeat the Final Boss, that will appear in the game.
+Para ganar el juego, deberás derrotar al Jefe Final.
 
-## Features
+## Como jugar
 
-We use Kotlin to make this game, so you can see the code in the **`src/main/kotlin/**`** folders.
+Para jugar debe ejecutar en consola el siguiente comando:
 
-In the `src/main/kotlin/services/ColiseumService.kt` file, in the `desapearDeadFighters()` function, we used lambda expressions to remove the dead 
-fighters from the list. In this way, we're using functional programming for improvement readability.
+```shell
+java jar "\direccion al jar\coliseum.jar"
+```
 
-## Developers
+### 1- Crear un luchador
 
-**Victor Palmero Valdes**
+Se le pedira que proporcione un nombre para su luchador:
+
+```shell
+Hello, so you want to fight?
+First, you need to pick a fighter.
+Enter the name of the fighter you want to fight.
+For example, if you want to fight the fighter named 'Pepe', you would enter 'Pepe'.
+```
+
+### 2- Posteriormente se le pedirá que elija un tipo de luchador:
+
+```shell
+Now, you need to pick a fighter.
+We have the following fighters:
+1. The Warrior
+2. The Mage
+3. The Thief
+```
+### 3- Luego, se le mostrara su luchador y comenzara el juego.
+
+```shell
+Name: Victor 
+HP: ██████████████████ :: 189
+DMG: 10
+ ^^^^^
+( - - )
+/ | \\
+| |  |
+ _|_  
+|   | 
+
+
+Now, you are ready to fight.
+								Name: Star Lord 
+ 								HP: █████████████ :: 138
+
+                								 DMG: 18
+                								  _____
+                								 ( ~ ~ )
+                								 // || \\
+                								 || ||  ||
+                								   _||_  
+                								  ||  || 
+
+Name: Victor 
+HP: ██████████████████ :: 189
+DMG: 10
+ ^^^^^
+( - - )
+/ | \\
+| |  |
+ _|_  
+|   | 
+
+Now it's your turn.
+Select a number between 1 and 10.
+```
+### 4- Para jugar debe entrar un número del 1 al 10, si este está entre el rango establecido, usted acertará un golpe.
+
+```shell
+You attack Star Lord.
+
+Random Generated Number: 9
+
+The Star Lord has attacked you!
+								Name: Star Lord 
+ 								HP: ████████████ :: 128
+
+                								 DMG: 18
+                								  _____
+                								 ( ~ ~ )
+                								 // || \\
+                								 || ||  ||
+                								   _||_  
+                								  ||  || 
+
+Name: Victor 
+HP: █████████████████ :: 171
+DMG: 10
+ ^^^^^
+( - - )
+/ | \\
+| |  |
+ _|_  
+|   | 
+```
+
+### 5- Ya sabes como jugar!!
+
+## Funcionalidades
+
+Usamos Kotlin para crear este juego, por lo que puedes ver el código en las carpetas **`src/main/kotlin/**`**.
+
+En el archivo `src/main/kotlin/services/ColiseumService.kt`, en la función `desapearDeadFighters()`, usamos expresiones lambda para eliminar los
+luchadores muertos de la lista. De esta manera, utilizamos programación funcional para mejorar la legibilidad.
+
+## Desarrolladores
+
+**Víctor Palmero Valdés**
 
 **Marcos Portales Ramos**
 
-**Jose Lazaro Diaz Estive**
+**José Lázaro Díaz Estive**
